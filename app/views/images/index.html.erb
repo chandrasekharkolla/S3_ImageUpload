@@ -1,5 +1,9 @@
 <div class="container">
-	<% @images.each do |image| %>
-		<%= image_tag image.avatar.url(:medium), class: 'img img-rounded img-responsive' %>
-	<% end %>
+	
+		<% @images.each do |image| %>
+			<div class="col-md-4">
+				<%= image_tag image.avatar.url(:medium), class: 'img img-rounded img-responsive' %>
+			</div>
+		<% end %>
+
 </div>

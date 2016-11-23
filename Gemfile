@@ -10,8 +10,11 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'paperclip', '~> 5.1'
+gem 'aws-sdk', '~> 2.6', '>= 2.6.28'
+# gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 group :development, :test do
+	gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 	gem 'sqlite3'
   gem 'byebug', platform: :mri
 end
